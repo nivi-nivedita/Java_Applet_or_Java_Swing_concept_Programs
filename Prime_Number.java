@@ -9,7 +9,7 @@ public class prime extends JApplet
 {	
 
 	private static final long serialVersionUID = 1L;
-	int i, x = 2;
+	
 	JTextField jt;
 	JButton b;
 	JLabel jb,jb1,jb2;
@@ -54,8 +54,7 @@ public void makeGUI()
 
     for(int count = 2; count <= n+1; i++)  
     {
-	  jb1=new JLabel(" ");
-	    add(jb1);
+	   
 
        
         for(c = 2; c <i; c++)
@@ -66,6 +65,9 @@ public void makeGUI()
 
         if(c == i)  
         {
+                jb1=new jlabel(" ");
+                 add(jb1) ;
+                
 		jb1.setText(i+" ");
             count++;    
         }
